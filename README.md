@@ -52,13 +52,15 @@ The application exposes city-based endpoints and returns structured weather info
 ```
 ### Project Structure
 src/main/java
- └── com.project.Weather_App
-     ├── controller
-     │   └── WeatherController.java
-     ├── service
-     │   └── WeatherService.java
-     └── DTO
-         └── WeatherResponse.java
+└── com/project/weatherapi
+    ├── controller
+    │   └── WeatherController.java
+    ├── service
+    │   └── WeatherService.java
+    ├── dto
+    │   └── WeatherResponse.java
+    └── WeatherApiApplication.java
+
 
 ### How to rum
 git clone https://github.com/Yash-997/weather-api.git
