@@ -51,7 +51,7 @@ The application exposes city-based endpoints and returns structured weather info
 
 ```
 
-### How to rum
+### How to run
 git clone https://github.com/Yash-997/weather-api.git
 
 
