@@ -3,6 +3,15 @@ package com.project.Weather_App.DTO;
 public class Root{
     public Location location;
     public Current current;
+    private Forecast forecast;
+
+    public Forecast getForecast() {
+        return forecast;
+    }
+
+    public void setForecast(Forecast forecast) {
+        this.forecast = forecast;
+    }
 
     public Root(Current current, Location location) {
         this.current = current;
