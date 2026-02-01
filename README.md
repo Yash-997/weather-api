@@ -51,6 +51,9 @@ The application exposes city-based endpoints and returns structured weather info
 
 ```
 ### Project Structure
+This structure follows standard Spring Boot conventions.
+It ensures clear separation of concerns.
+
 src/main/java
 └── com/project/weatherapi
     ├── controller
