@@ -343,5 +343,6 @@ public class Hour{
     public void setWindchill_f(double windchill_f) {
         this.windchill_f = windchill_f;
     }
+
 }
 

@@ -4,6 +4,7 @@ public class Root{
     public Location location;
     public Current current;
     private Forecast forecast;
+    private Hour hour;
 
     public Forecast getForecast() {
         return forecast;
@@ -22,6 +23,7 @@ public class Root{
     }
 
     public Location getLocation() {
+
         return location;
     }
 

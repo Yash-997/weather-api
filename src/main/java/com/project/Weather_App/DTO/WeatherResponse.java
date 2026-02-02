@@ -7,6 +7,16 @@ public class WeatherResponse {
     private String condition;
     private String tempreature;
     private String humidity;
+    private int isDay;
+
+    public int getIsDay() {
+        return isDay;
+    }
+
+    public void setIsDay(int isDay) {
+        this.isDay = isDay;
+    }
+
 
     public WeatherResponse() {
     }
