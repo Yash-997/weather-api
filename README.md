@@ -1,4 +1,4 @@
-Weather API (Spring Boot)
+##Weather API (Spring Boot)
 
 A RESTful Weather API built using Spring Boot and Spring Web that provides current weather details and multi-day forecasts for a given city by integrating with an external weather service.
 
