@@ -38,6 +38,11 @@ public class WeatherService {
         weatherResponse.setTempreature(Double.toString(response.getCurrent().temp_c));
         weatherResponse.setCondition(response.getCurrent().getCondition().getText());
         weatherResponse.setHumidity(Integer.toString(response.getCurrent().humidity) + "%");
+        weatherResponse.setWindSpeed(response.getCurrent().wind_kph);
+        weatherResponse.setFeelslike_c(response.getCurrent().feelslike_c);
+        weatherResponse.setPrecip_mm(response.getCurrent().precip_mm);
+        weatherResponse.setLast_updated(response.getCurrent().last_updated);
+
         if (response.getCurrent()==null) {
             throw new RuntimeException("Current weather data is missing from API response");
         }
