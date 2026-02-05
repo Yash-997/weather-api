@@ -1,62 +1,62 @@
 ## Weather API (Spring Boot)
 
-A RESTful Weather API built using Spring Boot and Spring Web that provides current weather details and multi-day forecasts for a given city by integrating with an external weather service.
+A RESTful Weather API built using Spring Boot and **Spring Web** that provides current weather details and multi-day forecasts for a given city by integrating with an external weather service.
 
 This backend is consumed by a custom frontend UI deployed separately.
 
-🌍 Live Links
-✅ Frontend (UI)
+## 🌍 Live Links
+-✅ Frontend (UI)
+ https://atmos-app-indol.vercel.app/
 
-👉 https://atmos-app-indol.vercel.app/
+-✅ Backend (Spring Boot API)
+ https://weather-api-1tct.onrender.com
+ 
+**⚠️ Note: The backend may take a few seconds to wake up on the first request due to Render’s free-tier cold start.**
 
-✅ Backend (Spring Boot API)
+## 🚀 What This Project Does
 
-👉 https://weather-api-1tct.onrender.com
+-Fetches **current weather data for a city**
 
-⚠️ Note: The backend may take a few seconds to wake up on the first request due to Render’s free-tier cold start.
+-Fetches **weather forecast for upcoming days**
 
-🚀 What This Project Does
+-Integrates with a **real external Weather API**
 
-Fetches current weather data for a city
+-Returns **clean, structured JSON responses**
 
-Fetches weather forecast for upcoming days
+-Uses **DTO/POJO-based design**
 
-Integrates with a real external Weather API
+-Follows Spring Boot layered architecture (Controller → Service → DTO)
 
-Returns clean, structured JSON responses
+## 🛠 Tech Stack
 
-Uses DTO/POJO-based design
+-Java 17
 
-Follows Spring Boot layered architecture (Controller → Service → DTO)
+-Spring Boot
 
-🛠 Tech Stack
+-Spring Web
 
-Java 17
+-RestTemplate
 
-Spring Boot
+-Maven
 
-Spring Web
+-Postman
 
-RestTemplate
+-Render (for deployment)
 
-Maven
+## 📡 API Endpoints
+| Method | Endpoint | Parameters | Description | |------|---------|-----------|-------------| | GET | /weather/{city} | city (path) | Get current weather details for the given city | | GET | /weather/forecast | city (query), days (query) | Get weather forecast for the given city and number of days |
 
-Postman
 
-Render (for deployment)
-
-📡 API Endpoints
-Method	Endpoint	Parameters	Description
-GET	/weather/{city}	city (path)	Get current weather details for the given city
-GET	/weather/forecast	city (query), days (query)	Get weather forecast for the given city and number of days
-Example Requests
+# Example Requests
 Current Weather
-GET https://weather-api-1tct.onrender.com/weather/pune
 
-Forecast
-GET https://weather-api-1tct.onrender.com/weather/forecast?city=pune&days=3
+GET **https://weather-api-1tct.onrender.com/weather/pune**
 
-📦 Sample Response (Current Weather)
+## Forecast
+GET **https://weather-api-1tct.onrender.com/weather/forecast?city=pune&days=3**
+
+## 📦 Sample Response (Current Weather)
+
 {
   "city": "Pune",
   "condition": "Clear",
