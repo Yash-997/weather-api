@@ -30,6 +30,9 @@ public class WeatherService {
 
     public WeatherResponse getData(String city) {
         String url = apiUrl + "?key=" + apiKey + "&q=" + city;
+        if(city.equals("Sangli".toLowerCase())){
+           url= url+",India";
+        }
         Root response = template.getForObject(url, Root.class);
         WeatherResponse weatherResponse = new WeatherResponse();
         weatherResponse.setCity(response.getLocation().name);
@@ -55,6 +58,9 @@ public class WeatherService {
     public MyAppForecastResponse getForecastData(String city, int days) {
 
         String url = forecastUrl + "?key=" + apiKey + "&q=" + city+ "&days="+days;
+        if(city.equals("Sangli".toLowerCase())){
+            url= forecastUrl + "?key=" + apiKey + "&q=" +",India"+"&days="+days;
+        }
         WeatherResponse weatherResponse = getData(city);
         MyAppForecastResponse response = new MyAppForecastResponse();
         response.setWeatherResponse(weatherResponse);
